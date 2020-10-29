@@ -9,3 +9,24 @@ require "ffaker"
 
 actor = Actor.new({ first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock" })
 actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+actor.save
+actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+
+actor.save
