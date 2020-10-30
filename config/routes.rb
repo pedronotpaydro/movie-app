@@ -9,5 +9,7 @@ Rails.application.routes.draw do
 
     get "/single_movie" => "movies#single_movie_action"
     get "/all_movies" => "movies#all_movies_action"
+
+    get "/my_fav" => "movies#fav_movie_action"
   end
 end
