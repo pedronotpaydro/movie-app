@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   namespace :api do
     get "/single_actor" => "actors#single_action"
     get "/fake" => "actors#all_fake_action"
+
+    get "/single_movie" => "movies#single_movie_action"
+    get "/all_movies" => "movies#all_movies_action"
   end
 end
