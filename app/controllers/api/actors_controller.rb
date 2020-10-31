@@ -8,4 +8,10 @@ class Api::ActorsController < ApplicationController
     @fakes = Actor.all
     render "all.json.jb"
   end
+
+  def single_actor_action
+    input_value = params["first_name"].capitalize
+    @output_value = Actor.find_by first_name: input_value
+    render "single_actor.json.jb"
+  end
 end

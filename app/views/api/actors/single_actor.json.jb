@@ -1,0 +1,5 @@
+{
+  actor_first_name: @output_value.first_name,
+  actor_last_name: @output_value.last_name,
+  actor_known_for: @output_value.known_for,
+}
