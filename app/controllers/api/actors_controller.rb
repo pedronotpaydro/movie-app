@@ -1,17 +1,38 @@
 class Api::ActorsController < ApplicationController
-  def single_action
-    @first = Actor.find_by id: "1"
-    render "single.json.jb"
+  def index
+    @actors = Actor.all
+    render "index.json.jb"
   end
 
-  def all_fake_action
-    @fakes = Actor.all
-    render "all.json.jb"
+  def create
+    @actor = Actor.new({
+      first_name: params["first_name"],
+      last_name: params["last_name"],
+      known_for: params["known_for"],
+    })
+    @actor.save
+    render "show.json.jb"
   end
 
-  def single_actor_action
-    input_value = params["first_name"].capitalize
-    @output_value = Actor.find_by first_name: input_value
-    render "single_actor.json.jb"
+  def show
+    input_id = params["id"]
+    @actor = Actor.find_by id: input_id
+    render "show.json.jb"
+  end
+
+  def update
+    input_id = params["id"]
+    @actor = Actor.find_by id: input_id
+    @actor.first_name = params["first_name"] || @actor.first_name
+    @actor.last_name = params["last_name"] || @actor.last_name
+    @actor.known_for = params["known_for"] || @actor.known_for
+    render "show.json.jb"
+  end
+
+  def destroy
+    input_id = params["id"]
+    @actor = Actor.find_by id: input_id
+    @actor.destroy
+    render json: { message: "actor destroyed" }
   end
 end

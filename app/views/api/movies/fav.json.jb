@@ -1,6 +1,0 @@
-{
-  pedro_favorite_movie: @fav.title,
-  year: @fav.year,
-  plot: @fav.plot,
-
-}
