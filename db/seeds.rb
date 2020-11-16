@@ -31,6 +31,20 @@ require "ffaker"
 
 # actor.save
 
-Movie.create(title: "No Country for Old Men", year: 2007, plot: "While out hunting, Llewelyn Moss (Josh Brolin) finds the grisly aftermath of a drug deal. Though he knows better, he cannot resist the cash left behind and takes it with him. The hunter becomes the hunted when a merciless killer named Chigurh (Javier Bardem) picks up his trail. Also looking for Moss is Sheriff Bell (Tommy Lee Jones), an aging lawman who reflects on a changing world and a dark secret of his own, as he tries to find and protect Moss.")
-Movie.create(title: "True Grit", year: 2010, plot: "After an outlaw named Tom Chaney (Josh Brolin) murders her father, feisty 14-year-old farm girl Mattie Ross (Hailee Steinfeld) hires Rooster Cogburn (Jeff Bridges), a boozy, trigger-happy lawman, to help her find Chaney and avenge her father. The bickering duo are not alone in their quest, for a Texas Ranger named LaBoeuf (Matt Damon) is also tracking Chaney for reasons of his own. Together the unlikely trio ventures into hostile territory to dispense some Old West justice.")
-Movie.create(title: "Raising Arizona", year: 1987, plot: "Fast-paced farce about an unlikely pair who go to extreme lengths to have a child. When an incompetent robber marries a policewoman, they discover that they are infertile. In order to appease his wife's longings for a child, the man steals one of a set of quintuplets, but mayhem ensues when the child's rich father sends a rabbit-shooting bounty hunter after the kidnapper.")
+# Movie.create(title: "No Country for Old Men", year: 2007, plot: "While out hunting, Llewelyn Moss (Josh Brolin) finds the grisly aftermath of a drug deal. Though he knows better, he cannot resist the cash left behind and takes it with him. The hunter becomes the hunted when a merciless killer named Chigurh (Javier Bardem) picks up his trail. Also looking for Moss is Sheriff Bell (Tommy Lee Jones), an aging lawman who reflects on a changing world and a dark secret of his own, as he tries to find and protect Moss.")
+# Movie.create(title: "True Grit", year: 2010, plot: "After an outlaw named Tom Chaney (Josh Brolin) murders her father, feisty 14-year-old farm girl Mattie Ross (Hailee Steinfeld) hires Rooster Cogburn (Jeff Bridges), a boozy, trigger-happy lawman, to help her find Chaney and avenge her father. The bickering duo are not alone in their quest, for a Texas Ranger named LaBoeuf (Matt Damon) is also tracking Chaney for reasons of his own. Together the unlikely trio ventures into hostile territory to dispense some Old West justice.")
+# Movie.create(title: "Raising Arizona", year: 1987, plot: "Fast-paced farce about an unlikely pair who go to extreme lengths to have a child. When an incompetent robber marries a policewoman, they discover that they are infertile. In order to appease his wife's longings for a child, the man steals one of a set of quintuplets, but mayhem ensues when the child's rich father sends a rabbit-shooting bounty hunter after the kidnapper.")
+
+# genre = Genre.create(name: "Horror")
+# genre = Genre.create(name: "Comedy")
+# genre = Genre.create(name: "Action")
+# genre = Genre.create(name: "Drama")
+# genre = Genre.create(name: "Love")
+# genre = Genre.create(name: "Documentary")
+# genre = Genre.create(name: "Thriller")
+# genre = Genre.create(name: "Sci-fi")
+# genre_movie = MovieGenre.create(genre_id: 3, movie_id: 10)
+# genre_movie = MovieGenre.create(genre_id: 8, movie_id: 9)
+# genre_movie = MovieGenre.create(genre_id: 4, movie_id: 8)
+# genre_movie = MovieGenre.create(genre_id: 2, movie_id: 6)
+# genre_movie = MovieGenre.create(genre_id: 4, movie_id: 5)
