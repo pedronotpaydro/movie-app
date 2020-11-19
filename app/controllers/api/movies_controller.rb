@@ -23,9 +23,9 @@ class Api::MoviesController < ApplicationController
   end
 
   def show
-    input_id = params["id"]
-    @movie = Movie.find_by id: input_id
-    render "show.json.jb"
+    @movie = Movie.find_by(id: params[:id])
+    # render "show.json.jb"
+    render "show.html.erb"
   end
 
   def update
