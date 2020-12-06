@@ -8,11 +8,11 @@ var app = new Vue({
   },
   methods: {
     getMovies: function() {
-      axios.get("http://localhost:3000/api/movies").then(response => (this.movies = response))
+      axios.get("http://immense-dawn-51035.herokuapp.com/api/movies").then(response => (this.movies = response))
     }
   }
 });
 
-// .get("http://localhost:3000/api/movies").then(function(response) {
+// .get("http://immense-dawn-51035.herokuapp.com/api/movies").then(function(response) {
 //         var movies = response.data;
 //         console.log(movies);
